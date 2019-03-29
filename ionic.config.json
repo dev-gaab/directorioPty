@@ -1,5 +1,7 @@
 {
   "name": "directorioPty",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

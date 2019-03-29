@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Buscar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label position="floating">Buscar...</ion-label>
+    <ion-input required type="text" placeholder="Ej: Odontologo" [(ngModel)]="search.search      "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Ciudad</ion-label>
+    <ion-input type="text" [(ngModel)]="search.city"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" class="ion-margin-top" (click)="doSearch()">
+    Buscar
+    <ion-icon slot="end" name="search"></ion-icon>
+  </ion-button>
+</ion-content>
